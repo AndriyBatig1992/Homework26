@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "homework24"
+version = "0.1.0"
+description = ""
+authors = ["AndriyBatig1992 <starickova.tan@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.104.1"
+unicorn = "^2.0.1.post1"
+pydantic = {extras = ["email"], version = "^2.5.2"}
+jinja2 = "^3.1.2"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+sqlalchemy = "^2.0.23"
+alembic = "^1.12.1"
+psycopg2 = "^2.9.9"
+python-multipart = "^0.0.6"
+uvicorn = "^0.24.0.post1"
+gravatar = "^0.1"
+libgravatar = "^1.0.4"
+fastapi-mail = "^1.4.1"
+redis = "^4.2.0"
+python-dotenv = "^1.0.0"
+pydantic-settings = "^2.1.0"
+fastapi-limiter = "^0.1.5"
+cloudinary = "^1.37.0"
+pytest = "^7.4.3"
+httpx = "^0.25.2"
+asyncpg = "^0.29.0"
+
+
+[tool.poetry.group.dev.dependencies]
+sphinx = "^7.2.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
